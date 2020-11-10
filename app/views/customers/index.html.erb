@@ -20,6 +20,15 @@
         <td><%= customer.number %></td>
         <td><%= customer.email %></td>
         <td><%= customer.notes %></td>
+        <td>
+        <% if customer.image.present? %>
+          <div>
+            <figure>
+              <%= image_tag customer.image %>
+            </figure>
+          </div>
+        <% end %>
+        <td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
