@@ -1,7 +1,7 @@
 ActiveAdmin.register Customer do
 
 
-  permit_params :name, :number, :email, :notes
+  permit_params :name, :number, :email, :notes, :image
   #
   # or
   #
