@@ -1,0 +1,16 @@
+<div class="column">
+  <div class="card">
+    <h4 class= "title is-4"><%= customer.name %></h4>
+    <div class="card-image">
+      <figure class="image">
+        <%= image_tag(customer.image, alt: customer.name)%>
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="content">
+        <p><%= customer.number %></p >
+        <p><%= customer.email %></p >
+      </div>
+    </div>
+  </div>
+</div>
